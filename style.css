@@ -6,16 +6,10 @@
 
 html,
 body {
-    /*max-width: 1600px;*/
     margin: 0 auto;
     min-height: 100%;
     font-family: 'Lato', sans-serif;
 }
-
-/*body {*/
-/*    outline: 1px solid green;*/
-/*}*/
-
 .clearfix:after {
     content: "";
     display: table;
@@ -96,12 +90,11 @@ img[alt="logo"] {
 
 .searchbar button {
     background-color: transparent;
-    margin-left: auto;
     border-radius: 0 3px 3px 0;
     border: 1px solid #e6e6e6;
     border-left: none;
     cursor: pointer;
-    width: 38.8px;
+    width: 39px;
     height: 39px
 }
 
@@ -142,7 +135,6 @@ nav a {
     margin-top: 18px;
     margin-bottom: 22px;
 }
-
 .slider-1 {
     min-height: 613px;
     background-color: #e8e8e8;
@@ -151,15 +143,40 @@ nav a {
     background-position: center;
     background-size: cover;
   }
-
+.featrd-items {
+    text-align: center;
+    margin-top: 95px;
+    margin-bottom: 10px;
+}
+.featrd-items + p {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.35px;
+    margin-bottom: 55px;
+}
+.all-products {
+    display: block;
+    width: 212px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f16d7f;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* Style for "Browse All" */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
 .tagline {
     padding-top: 224px;
 }
-
 .tag-content {
     position: relative;
 }
-
 .rectangle {
     position: absolute;
     top: 15px;
@@ -168,11 +185,9 @@ nav a {
     width: 12px;
     background-color: #f16d7f;
 }
-
 .tag-texts {
     padding-left: 24px;
 }
-
 .tag-txt-1 {
     display: block;
     color: #222222;
@@ -191,10 +206,9 @@ nav a {
 .tag-txt-2 span {
     color: #f16d7f;
 }
-
 .feature {
     display: flex;
-    margin-top: 97px;
+    margin-top: 113px;
     margin-bottom: 97px;
 }
 .feature-tag {
@@ -209,7 +223,6 @@ nav a {
     margin-top: 132px;
     margin-left: 38px;
 }
-
 .discount {
     display: block;
     color: #ffffff;
@@ -267,33 +280,23 @@ nav a {
 }
 
 .subscription {
-    /*outline: 1px solid red;*/
-    /*background-color: #f2f2f2;*/
-    position: relative;
-    overflow: hidden;
-    min-height: 438px;
+    background-image: url("img/beach-bright.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-bottom: 100px;
-    display: flex;
-    align-items: center;
-}
-
-img[alt="beach"]{
-    margin: 0 auto;
-    opacity: 60%;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 .sub-wrapper {
     display: flex;
     align-items: center;
+    min-height: 438px;
+    outline: 1px solid blue;
 }
 .slider-2 {
-    width: 570px;
+    flex-basis: 570px;
+    height: 100%;
+    outline: 1px solid red;
 }
 .quote {
     display: flex;
@@ -325,10 +328,10 @@ img[alt="beach"]{
 }
 .sub-mail {
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    width: 570px;
+    outline: 1px solid green;
 }
 img[alt="face"] {
     padding-right: 28px;
@@ -372,12 +375,11 @@ img[alt="face"] {
     padding-left: 29px;
     padding-top: 10px;
     padding-bottom: 10px;
-    flex-basis: 334px;
+    flex-basis: 280px; /*  334px  */
 }
 .sub-form button {
     border: none;
     color: #ffffff;
-    margin-left: auto;
     border-radius: 0 23px 23px 0;
     background-color: #f16d7f;
     cursor: pointer;
