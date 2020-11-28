@@ -6,7 +6,7 @@
 
 html,
 body {
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     margin: 0 auto;
     min-height: 100%;
     font-family: 'Lato', sans-serif;
@@ -30,7 +30,6 @@ body {
 header {
     border-bottom: 1px #ececec solid;
     /*display: flex;*/
-    max-width: 1600px;
     margin: 0 auto;
     align-items: center;
 }
@@ -268,6 +267,8 @@ nav a {
 }
 
 .subscription {
+    /*outline: 1px solid red;*/
+    /*background-color: #f2f2f2;*/
     position: relative;
     overflow: hidden;
     min-height: 438px;
@@ -277,6 +278,7 @@ nav a {
 }
 
 img[alt="beach"]{
+    margin: 0 auto;
     opacity: 60%;
     z-index: -1;
     position: absolute;
