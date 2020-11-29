@@ -19,7 +19,7 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    outline: 1px darkturquoise solid;
+    /*outline: 1px darkturquoise solid;*/
 }
 
 header {
@@ -123,7 +123,6 @@ img[alt="logo-footer"] {
     padding: 10px 29px 10px 19px;
 }
 .account:hover {
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
     background-color: #eb6c49;
     -webkit-transition: all 250ms;
     -moz-transition: all 250ms;
@@ -168,6 +167,80 @@ nav a:hover {
     letter-spacing: 0.35px;
     margin-bottom: 55px;
 }
+
+.categories {
+    margin-top: 98px;
+}
+.categories-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 823px;
+}
+.category:nth-child(odd) {
+    margin-bottom: 20px;
+}
+.category:nth-child(1),
+.category:nth-child(2) {
+    margin-right: 20px;
+}
+.category:nth-of-type(1) {
+    min-height: 542px;
+    width: 560px;
+    background-image: url("img/for-men.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.category:nth-of-type(2) {
+    min-height: 261px;
+    width: 560px;
+    background-image: url("img/luxurious.png");
+    background-color: #dadad2;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.category:nth-of-type(3) {
+    min-height: 261px;
+    width: 560px;
+    background-image: url("img/for-women.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.category:nth-of-type(4) {
+    min-height: 542px;
+    width: 560px;
+    background-image: url("img/for-kids.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.categ-txt {
+    display: inline-block;
+    background-color: #ffffff;
+    margin-top: 27px;
+    padding: 12px 17px 10px 19px;
+}
+.categ-txt p:nth-child(1) {
+    /* Style for "HOT HEAL" */
+    color: #222222;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+.categ-txt p:nth-child(2) {
+    /* Style for "FOR WHO" */
+    color: #f16d7f;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
 .pruduct-cards {
     display: flex;
     flex-wrap: wrap;
