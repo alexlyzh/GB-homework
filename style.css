@@ -19,7 +19,7 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    /*outline: 1px darkturquoise solid;*/
+    outline: 1px darkturquoise solid;
 }
 
 header {
@@ -32,9 +32,12 @@ header {
     margin: 0 auto;
     align-items: center;
 }
-img[alt="logo"] {
+img[alt="logo-header"] {
     padding-top: 25px;
     padding-bottom: 25px;
+    margin-right: 14px;
+}
+img[alt="logo-footer"] {
     margin-right: 14px;
 }
 .logo-link {
@@ -470,20 +473,69 @@ img[alt="face"] {
 .slide-button:nth-of-type(2) {
     background-color: #f16d7f;
 }
-
-.upper-footer {
+.upper-foot-wrapper {
     min-height: 458px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.brand {
+    max-width: 423px;
+    margin-right: 68px;
+}
+.div-logo-footer {
+    display: flex;
+    align-items: center;
+}
+.brand-text {
+    color: #898989;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: 20px;
+}
+.brand-text p:first-of-type {
+    margin-bottom: 10px;
+}
+.company,
+.information,
+.shop-category {
+    min-height: 238px;
+}
+.company,
+.information {
+    margin-right: 112px;
+}
+.company h3,
+.information h3,
+.shop-category h3 {
+    color: #f16d7f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 40px;
+}
+.company p,
+.information p,
+.shop-category p {
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 20px;
 }
 .lower-footer {
     background-color: #e6e6e6;
 }
-.foot-wrapper {
+.lower-foot-wrapper {
     min-height: 79px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.foot-wrapper span {
+.lower-foot-wrapper span {
     color: #7a7a7a;
     font-size: 16px;
     font-weight: 400;
