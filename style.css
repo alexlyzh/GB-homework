@@ -459,12 +459,22 @@ figcaption p a {
     display: flex;
     align-items: center;
     min-height: 438px;
-    outline: 1px solid blue;
+    /*outline: 1px solid blue;*/
 }
 .slider-2 {
     flex-basis: 570px;
     height: 100%;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
+    position: relative;
+}
+.slider-2:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #e3e3e3;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 .quote {
     display: flex;
@@ -499,7 +509,7 @@ figcaption p a {
     flex: 1 1 auto;
     flex-direction: column;
     align-items: center;
-    outline: 1px solid green;
+    /*outline: 1px solid green;*/
 }
 img[alt="face"] {
     padding-right: 28px;
