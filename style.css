@@ -704,7 +704,7 @@ img[alt="face"] {
 
 .new-arrivals {
     background-color: #f8f3f4;
-    margin-bottom: 100px;
+    margin-bottom: 58px;
 }
 .bread-block {
     display: flex;
@@ -735,3 +735,6 @@ img[alt="face"] {
     font-weight: 700;
 }
 
+.sidebar {
+    display: flex;
+}
