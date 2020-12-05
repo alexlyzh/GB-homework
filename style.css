@@ -36,11 +36,24 @@ header {
     display: flex;
     align-items: center;
 }
+.div-logo {
+    display: flex;
+    align-items: center;
+    /*padding-bottom: 25px;*/
+    /*padding-top: 25px;*/
+}
 img[alt="logo"] {
     margin-right: 14px;
 }
 .logo-link {
     text-decoration: none;
+
+    background-image: url("img/logo.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 71px;
 }
 .logo-txt {
     color: #222222;
@@ -281,15 +294,19 @@ nav a:hover {
     bottom: 83px;
 }
 .add-to-cart a {
+    background-image: url(img/cart-white.png);
+    background-size: 23px 22px;
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
     display: inline-block;
     float: left;
     color: #ffffff;
     font-size: 13px;
     font-weight: 700;
-    padding: 13px;
+    padding: 13px 13px 13px 39px;
     outline: 1px #ffffff solid;
     margin-top: 98px;
-    margin-left: 83.3px;
+    margin-left: 70.3px;
 }
 .product:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
@@ -602,13 +619,6 @@ img[alt="face"] {
 .brand {
     max-width: 423px;
     margin-right: 68px;
-}
-.div-logo {
-    display: flex;
-    align-items: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-;
 }
 .brand-text {
     color: #898989;
