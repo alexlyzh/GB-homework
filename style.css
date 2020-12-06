@@ -537,7 +537,7 @@ img[alt="face"] {
     transition: transform 2s;
 }
 img[alt="face"]:hover {
-    transform: scale(1.5) rotate(360deg);
+    transform: scale(1.1) rotate(720deg);
 }
 .slider-2 span {
     max-width: 391px;
@@ -717,6 +717,9 @@ img[alt="face"]:hover {
 
 .new-arrivals {
     background-color: #f8f3f4;
+}
+.new-arrivals:hover {
+    animation: animate-background-clr 50s infinite linear;
 }
 .bread-block {
     display: flex;
@@ -982,14 +985,19 @@ img[alt=progress-bar] {
 
 .checkout-settings {
     list-style-type: none;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
-.checkout-settings h2 {
+.checkout-settings li h2 {
     color: #222222;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 75px;
-    margin-bottom: 35px;
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+.checkout-settings > li {
+    border-bottom: 1px solid #e8e8e8;
 }
 .checkout-item_content {
     display: flex;
@@ -1070,10 +1078,10 @@ img[alt=progress-bar] {
         background-color: #ffffff;
     }
     10% {
-        background-color: #fffb00;
+        background-color: #e9ff56;
     }
     20% {
-        background-color: #86ce00;
+        background-color: #6dff28;
     }
     30% {
         background-color: #52cec0;
@@ -1082,16 +1090,16 @@ img[alt=progress-bar] {
         background-color: #ff9fe8;
     }
     50% {
-        background-color: #ff2ba6;
+        background-color: #7bcbff;
     }
     60% {
         background-color: #ffa874;
     }
     70% {
-        background-color: #ff8203;
+        background-color: #ffc649;
     }
     80% {
-        background-color: #ff0000;
+        background-color: #73ffbc;
     }
     90% {
         background-color: #ddff00;
