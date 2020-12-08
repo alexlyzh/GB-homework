@@ -402,7 +402,7 @@ figcaption p a {
     margin-bottom: 97px;
 }
 .feature-tag {
-    min-height: 529px;
+    /*min-height: 529px;*/
     width: 767px;
     background-image: url("img/offer30.png");
     background-repeat: no-repeat;
@@ -438,13 +438,21 @@ figcaption p a {
     flex-grow: 1;
     background-color: #222224;;
 }
-
 .feature-box {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
 }
-
+.feature-box:first-of-type {
+    padding-top: 45px;
+}
+.feature-box:nth-of-type(1),
+.feature-box:nth-of-type(2) {
+    padding-bottom: 50px;
+}
+.feature-box:last-of-type {
+    padding-bottom: 60px;
+}
 .feat-txt {
     display: flex;
     flex-direction: column;
@@ -613,10 +621,11 @@ img[alt="face"]:hover {
     background-color: #f16d7f;
 }
 .upper-foot-wrapper {
-    min-height: 458px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 95px;
+    padding-bottom: 85px;
 }
 .brand {
     max-width: 423px;
@@ -717,6 +726,7 @@ img[alt="face"]:hover {
 
 .new-arrivals {
     background-color: #f8f3f4;
+    margin-bottom: 60px;
 }
 .new-arrivals:hover {
     animation: animate-background-clr 50s infinite linear;
@@ -724,7 +734,6 @@ img[alt="face"]:hover {
 .bread-block {
     display: flex;
     align-items: center;
-    /*min-height: 148px;*/
 }
 .breadcrumbs-h2 {
     color: #f16d7f;
@@ -752,7 +761,7 @@ img[alt="face"]:hover {
 }
 
 .product-selection {
-    margin-top: 60px;
+    margin-bottom: 110px;
 }
 .product-selection-wrap {
     display: flex;
@@ -991,22 +1000,20 @@ img[alt=progress-bar] {
 
 .feature-product {
     background-color: #222222;
-    min-height: 340px;
-    margin-top: 110px;
+    /*min-height: 340px;*/
+    /*margin-top: 110px;*/
 }
 .feature-product-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 90px;
+    padding-bottom: 105px;
 }
 .feature-prod-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.feature-product-img {
-    display: inline-block;
-    margin-top: 90px;
 }
 .feature-headline {
     color: #fbfbfb;
@@ -1028,7 +1035,7 @@ img[alt=progress-bar] {
 
 .checkout-settings {
     list-style-type: none;
-    margin-top: 75px;
+    margin-top: 90px;
     margin-bottom: 75px;
 }
 .checkout-settings li h2 {
