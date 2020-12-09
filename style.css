@@ -776,7 +776,6 @@ img[alt="face"]:hover {
 }
 .sidebar-item {
     margin-bottom: 18px;
-
 }
 .sidebar a {
     color: #6f6e6e;
@@ -822,6 +821,7 @@ img[alt="face"]:hover {
     top: 50%;
     right: 5px;
     transform: translateY(-50%);
+    transition: .5s linear;
 }
 .sidebar-input {
     visibility: hidden;
@@ -831,8 +831,16 @@ img[alt="face"]:hover {
     width: 0;
     position: absolute;
 }
+.sidebar-txt {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all .5s ease-out;
+    transition: .5s ease-out;
+}
 .sidebar-input:checked ~ .sidebar-txt {
-    display: block;
+    max-height: 2500px;
+    -webkit-transition: all 1s linear;
+    transition: 1s linear;
 }
 .sidebar-input:checked ~ .sidebar-title { /* чтобы это сработало, нужно чтобы input был выше label*/
     color: #f16d7f;
@@ -847,9 +855,7 @@ img[alt="face"]:hover {
     top: 50%;
     right: 5px;
     transform: translateY(-50%);
-}
-.sidebar-txt {
-    display: none;
+    transition: .5s ease-out;
 }
 .top-filter {
     /*outline: 10px solid yellow;*/
