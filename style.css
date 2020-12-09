@@ -130,13 +130,14 @@ img[alt="logo"] {
     letter-spacing: 0.38px;
     background-color: #f16d7f;
     padding: 10px 29px 10px 19px;
+    transition: transform .1s linear;
 }
 .account:hover {
-    background-color: #eb6c49;
-    -webkit-transition: all 250ms;
-    -moz-transition: all 250ms;
-    -o-transition: all 250ms;
-    transition: all 250ms;
+    background-color: #ffffff;
+    color: #f16d7f;
+    outline: 1px solid #f16d7f;
+    transform: scale(1.1);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 nav {
     margin: 15px auto 0 auto;
@@ -347,20 +348,16 @@ figcaption p a {
     background-color: #f16d7f;
     padding-top: 15px;
     padding-bottom: 15px;
-    /* Style for "Browse All" */
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0;
+    transition: all 0.5s ease-in-out;
 }
 .all-products-link:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-    background-color: #eb6c49;
-    -webkit-transition: all 250ms;
-    -moz-transition: all 250ms;
-    -o-transition: all 250ms;
-    transition: all 250ms;
+    transform: scale(1.05);
 }
 .tagline {
     padding-top: 224px;
@@ -993,6 +990,7 @@ img[alt=progress-bar] {
     font-size: 16px;
     font-weight: bold;
     padding: 10px 40px;
+    transition: transform 0.3s linear;
 }
 .view-all:hover {
     border-radius: 3px;
@@ -1003,6 +1001,7 @@ img[alt=progress-bar] {
     font-weight: bold;
     padding: 10px 40px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    transform: scale(1.05);
 }
 
 .feature-product {
@@ -1152,6 +1151,7 @@ img[alt=progress-bar] {
     background-color: #f16d7f;
     color: #ffffff;
     transform: scale(1.1);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 @keyframes animate-background-clr {
     5% {
