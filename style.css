@@ -73,6 +73,7 @@ img[alt="logo"] {
 .searchbar {
     display: flex;
     width: 403px;
+    height: 39px;
 }
 .searchbar a {
     color: #222222;
@@ -1038,31 +1039,50 @@ img[alt=progress-bar] {
     line-height: 24px;
     text-align: center;
 }
-
-.checkout-settings {
-    list-style-type: none;
+.checkout {
     margin-top: 90px;
     margin-bottom: 75px;
 }
-.checkout-settings li h2 {
+.accordion {
+    list-style-type: none;
+}
+.accordion__input {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.accordion__title {
+    display: block;
     color: #222222;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 30px;
-    padding-bottom: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
-.checkout-settings > li {
+.accordion__title:hover {
+    color: #f16d7f;
+}
+.accordion__item {
+    position: relative;
     border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 25px;
 }
-.checkout-item_content {
+.accordion__content {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
+    max-height: 0;
+    overflow: hidden;
 }
-.checkout-form_div {
-    /*outline: 1px red dashed;*/
+.accordion__input:checked ~ .accordion__content {
+    max-height: 2500px;
+    transition: 2s ease-in-out;
+}
+.checkout-form {
     padding-left: 35px;
     flex-basis: 535px;
     min-width: 320px;
@@ -1125,9 +1145,13 @@ img[alt=progress-bar] {
     background-color: #ffffff;
     margin: 30px 0 70px 0;
     cursor: pointer;
+    transition: transform 1s;
 }
 .checkout-form-link:hover {
-    animation: animate-background-clr 30s linear infinite;
+    border-color: transparent;
+    background-color: #f16d7f;
+    color: #ffffff;
+    transform: scale(1.1);
 }
 @keyframes animate-background-clr {
     5% {
