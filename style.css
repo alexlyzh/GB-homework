@@ -293,20 +293,53 @@ nav a:hover {
     right: 0;
     bottom: 83px;
 }
-.add-to-cart a {
+.product__button {
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    display: inline-block;
+    color: #ffffff;
+    position: absolute;
+}
+.product__button:hover {
+    transform: scale(1.1);
+}
+.product__cart {
     background-image: url(img/cart-white.png);
     background-size: 23px 22px;
-    background-repeat: no-repeat;
     background-position: 10px 50%;
-    display: inline-block;
-    float: left;
-    color: #ffffff;
+    width: 123px;
+    height: 39px;
     font-size: 13px;
     font-weight: 700;
-    padding: 13px 13px 13px 39px;
-    outline: 1px #ffffff solid;
-    margin-top: 98px;
-    margin-left: 70.3px;
+    padding: 13px 0 13px 27px;
+    top: 98px;
+    left: 70px;
+}
+.product__share {
+    background-image: url("img/share.png");
+    background-position: center;
+    background-size: 22px 12px;
+    width: 57px;
+    height: 38px;
+    top: 145px;
+    left: 70px;
+}
+.product__like {
+    background-image: url("img/like.png");
+    background-position: center;
+    background-size: 16px 15px;
+    width: 57px;
+    height: 38px;
+    top: 145px;
+    left: 136px;
+}
+.product {
+    width: 260px;
+    height: 363px;
+    position: relative;
 }
 .product:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
@@ -314,6 +347,14 @@ nav a:hover {
 }
 .product:hover .add-to-cart {
     visibility: visible;
+}
+.product__commands {
+    width: 260px;
+    height: 280px;
+}
+.product__commands:hover {
+    background: url("img/manpic_1.png") no-repeat center
+                rgba(34,34,34,0.8);
 }
 figcaption {
     margin-left: 12px;
@@ -574,7 +615,7 @@ img[alt="face"]:hover {
     width: 386px;
     margin-top: 35px;
 }
-.sub-form input {
+.sub-form__input {
     border: none;
     border-radius: 23px 0 0 23px;
     background-color: #e1e1e1;
@@ -586,7 +627,7 @@ img[alt="face"]:hover {
     padding-bottom: 10px;
     flex-basis: 280px; /*  334px  */
 }
-.sub-form button {
+.sub-form__button {
     border: none;
     color: #ffffff;
     border-radius: 0 23px 23px 0;
@@ -599,7 +640,7 @@ img[alt="face"]:hover {
     line-height: 46px;
     font-weight: 400;
 }
-.sub-form button:hover {
+.sub-form__button:hover {
     background-color: #eb6c49;
     -webkit-transition: all 250ms;
     -moz-transition: all 250ms;
@@ -1079,7 +1120,7 @@ img[alt=progress-bar] {
 }
 .accordion__input:checked ~ .accordion__content {
     max-height: 2500px;
-    transition: 2s ease-in-out;
+    /*transition: 2s ease-in-out;*/
 }
 .checkout-form {
     padding-left: 35px;
