@@ -294,8 +294,14 @@ nav a:hover {
     flex-shrink: 0;
     margin-bottom: 40px;
     position: relative;
+    width: 260px;
+    height: 363px;
 }
-.product img {
+.product:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+.product__img {
     width: 260px;
     height: 280px;
 }
@@ -350,15 +356,6 @@ nav a:hover {
     height: 38px;
     top: 145px;
     left: 136px;
-}
-.product {
-    width: 260px;
-    height: 363px;
-    position: relative;
-}
-.product:hover {
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
 }
 .product:hover .add-to-cart {
     visibility: visible;
