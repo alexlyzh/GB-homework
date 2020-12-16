@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    box-sizing: border-box;
 }
 
 html,
@@ -13,9 +14,6 @@ body {
 a {
     text-decoration: none;
 }
-/*button {*/
-/*    color: #6f6e6e;*/
-/*}*/
 .clearfix:after {
     content: "";
     display: table;
@@ -25,7 +23,7 @@ a {
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    outline: 1px red dashed;
+    /*outline: 1px red dashed;*/
 }
 @media screen and (max-width: 1200px) {
     .container {
@@ -51,7 +49,6 @@ img[alt="logo"] {
 }
 .logo-link {
     text-decoration: none;
-
     background-image: url("img/logo.png");
     background-repeat: no-repeat;
     background-position: left;
@@ -324,9 +321,6 @@ nav a:hover {
     color: #ffffff;
     position: absolute;
 }
-.product__button:hover {
-    transform: scale(1.1);
-}
 .product__cart {
     background-image: url(img/cart-white.png);
     background-size: 23px 22px;
@@ -336,8 +330,9 @@ nav a:hover {
     font-size: 13px;
     font-weight: 700;
     padding: 13px 0 13px 27px;
-    top: 98px;
-    left: 70px;
+    top: 34%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .product__share {
     background-image: url("img/share.png");
