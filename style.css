@@ -1286,3 +1286,8 @@ img[alt=progress-bar] {
 .reset-password-link:hover {
     color: #f16d7f;
 }
+/*       SHOPPING CART       */
+
+.shopping-cart {
+    outline: 1px red solid;
+}
