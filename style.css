@@ -311,6 +311,12 @@ nav a:hover {
     right: 0;
     bottom: 83px;
 }
+.product__pad {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .product__button {
     background-color: transparent;
     cursor: pointer;
@@ -319,7 +325,7 @@ nav a:hover {
     border-radius: 3px;
     display: inline-block;
     color: #ffffff;
-    position: absolute;
+    /*position: absolute;*/
 }
 .product__cart {
     background-image: url(img/cart-white.png);
@@ -330,9 +336,10 @@ nav a:hover {
     font-size: 13px;
     font-weight: 700;
     padding: 13px 0 13px 27px;
-    top: 34%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 8px;
+    /*top: 34%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
 }
 .product__share {
     background-image: url("img/share.png");
@@ -340,8 +347,10 @@ nav a:hover {
     background-size: 22px 12px;
     width: 57px;
     height: 38px;
-    top: 145px;
-    left: 70px;
+    margin-right: 6px;
+    /*top: 145px;*/
+    /*left: 70px;*/
+
 }
 .product__like {
     background-image: url("img/like.png");
@@ -349,8 +358,8 @@ nav a:hover {
     background-size: 16px 15px;
     width: 57px;
     height: 38px;
-    top: 145px;
-    left: 136px;
+    /*top: 145px;*/
+    /*left: 136px;*/
 }
 .product:hover .add-to-cart {
     visibility: visible;
