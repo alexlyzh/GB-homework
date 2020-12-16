@@ -311,8 +311,15 @@ nav a:hover {
     left: 0;
     right: 0;
     bottom: 83px;
+    /*padding-top: 37%;*/
+    /*padding-left: 26.5%;*/
 }
 .product__pad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 123px;
     position: absolute;
     top: 34%;
     left: 50%;
@@ -344,8 +351,6 @@ nav a:hover {
     background-size: 22px 12px;
     width: 57px;
     height: 38px;
-    margin-right: 6px;
-
 }
 .product__like {
     background-image: url("img/like.png");
@@ -928,7 +933,6 @@ img[alt="face"]:hover {
     transition: .5s ease-out;
 }
 .top-filter {
-    /*outline: 10px solid yellow;*/
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -937,25 +941,25 @@ img[alt="face"]:hover {
 }
 .filter-trending {
     flex-basis: 280px;
-    /*outline: 1px solid black;*/
+    margin-bottom: 30px;
 }
 .filter-size {
     flex-basis: 280px;
     margin-bottom: 30px;
-    /*outline: 1px solid black;*/
 }
 .filter-price {
     flex-basis: 280px;
-    /*outline: 1px solid black;*/
+    margin-bottom: 30px;
 }
 .filter-sort_by {
     display: flex;
-    align-items: center;
+    align-items: centerфаывавыййgit
+asfsqssfs;
     flex-grow: 1;
-    min-width: 621px;
+    min-width: 300px;
     height: 50px;
     background-color: #f3f3f3;
-    /*outline: 1px solid red;*/
+    padding-left: 10px;
 }
 .filter-title{
     color: #6f6e6e;
@@ -1029,7 +1033,6 @@ img[alt=progress-bar] {
     background-color: #ffffff;
     border: 1px solid #ebebeb;
     border-right: none;
-    margin-left: 10px;
 }
 .filter-selector {
     box-sizing: border-box;
