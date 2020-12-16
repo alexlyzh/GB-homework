@@ -299,7 +299,8 @@ nav a:hover {
     background-color: #ffffff;
 }
 .product__img {
-    width: 260px;
+    display: block;
+    width: 100%;
     height: 280px;
 }
 .add-to-cart {
@@ -325,7 +326,6 @@ nav a:hover {
     border-radius: 3px;
     display: inline-block;
     color: #ffffff;
-    /*position: absolute;*/
 }
 .product__cart {
     background-image: url(img/cart-white.png);
@@ -337,9 +337,6 @@ nav a:hover {
     font-weight: 700;
     padding: 13px 0 13px 27px;
     margin-bottom: 8px;
-    /*top: 34%;*/
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
 }
 .product__share {
     background-image: url("img/share.png");
@@ -348,8 +345,6 @@ nav a:hover {
     width: 57px;
     height: 38px;
     margin-right: 6px;
-    /*top: 145px;*/
-    /*left: 70px;*/
 
 }
 .product__like {
@@ -358,8 +353,6 @@ nav a:hover {
     background-size: 16px 15px;
     width: 57px;
     height: 38px;
-    /*top: 145px;*/
-    /*left: 136px;*/
 }
 .product:hover .add-to-cart {
     visibility: visible;
