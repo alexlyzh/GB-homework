@@ -1289,5 +1289,110 @@ img[alt=progress-bar] {
 /*       SHOPPING CART       */
 
 .shopping-cart {
-    outline: 1px red solid;
+    /*outline: 1px red dashed;*/
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+.details {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.details th {
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 20px;
+    color: #222222;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eaeaea;
+}
+.details th:first-child,
+.details td:first-child {
+    text-align: left;
+}
+.details th:last-child,
+.details td:last-child {
+    text-align: right;
+}
+.details td {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    vertical-align: center;
+    border-bottom: 1px solid #eaeaea;
+}
+.details td:nth-child(2),
+.details td:nth-child(3),
+.details td:nth-child(4),
+.details td:nth-child(5) {
+    text-align: center;
+}
+.details__art {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*outline: 1px black solid;*/
+}
+.details__text {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.cart_image {
+    display: block;
+    width: 100px;
+}
+.cart_image:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+.details__text > span {
+    display: block;
+}
+.details__text-headline {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 0.35px;
+}
+.details_text-specs {
+    color: #6f6e6e;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+}
+.details_text-specs > span {
+    font-weight: 400;
+}
+.details__unit-price,
+.details__shipping,
+.details__subtotal,
+.details__action {
+    font-size: 13px;
+    line-height: 20px;
+    color: #656565;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.details__action {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 18px;
+}
+.details__action:hover {
+    color: #f16d7f;
+}
+.details__input {
+    width: 54px;
+    padding: 5.5px 1px 5.5px 22px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+}
+.details__input:focus {
+    border: 1px solid #222222;
 }
