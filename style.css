@@ -543,6 +543,13 @@ figcaption p a {
         width: 100%;
         margin: 0 auto;
     }
+    .feature-product-items {
+        flex-direction: column;
+    }
+    .feature-product-items .feature-prod-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 45px;
+    }
 }
 
 .subscription {
@@ -1085,6 +1092,10 @@ img[alt=progress-bar] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 370px;
+}
+.feature-prod-item:not(:last-child) {
+    margin-right: 15px;
 }
 .feature-headline {
     color: #fbfbfb;
@@ -1136,7 +1147,7 @@ img[alt=progress-bar] {
 }
 .accordion__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     flex-wrap: wrap;
     max-height: 0;
@@ -1144,13 +1155,21 @@ img[alt=progress-bar] {
 }
 .accordion__input:checked ~ .accordion__content {
     max-height: 2500px;
+    margin-bottom: 80px
     /*transition: 2s ease-in-out;*/
 }
 .checkout-form {
-    padding-left: 35px;
     flex-basis: 535px;
     min-width: 320px;
-    height: 410px;
+    padding-left: 35px;
+}
+.checkout-form:first-child {
+    margin-right: 15px;
+}
+@media screen and (max-width: 1129px) {
+    .checkout-form:first-child {
+        margin-bottom: 15px;
+    }
 }
 .checkout-form_headline {
     color: #222222;
@@ -1199,15 +1218,12 @@ img[alt=progress-bar] {
     margin-bottom: 22px;
 }
 .button-site {
-    display: inline-block;
     color: #4a4a4a;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 15px 40px 15px 40px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
-    margin-top: 30px;
     cursor: pointer;
     transition: transform 1s;
 }
@@ -1217,6 +1233,10 @@ img[alt=progress-bar] {
     color: #ffffff;
     transform: scale(1.1);
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+.button-site_page_checkout {
+    margin-top: 30px;
+    padding: 15px 40px 15px 40px;
 }
 @keyframes animate-background-clr {
     5% {
