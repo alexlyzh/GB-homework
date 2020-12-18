@@ -412,7 +412,8 @@ figcaption p a {
 .tag-content {
     position: relative;
 }
-.rectangle {
+.tag-content::before {
+    content: "";
     position: absolute;
     top: 15px;
     bottom: 8.5px;
