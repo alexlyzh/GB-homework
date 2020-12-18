@@ -1236,6 +1236,9 @@ img[alt=progress-bar] {
 }
 .button-site_page_checkout {
     margin-top: 30px;
+    padding: 15px 52px 15px 52px;
+}
+.button-site_shopping_cart {
     padding: 15px 40px 15px 40px;
 }
 @keyframes animate-background-clr {
