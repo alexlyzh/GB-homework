@@ -84,7 +84,8 @@ img[alt="logo"] {
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
     text-decoration: none;
 }
-.searchbar input {
+.searchbar__input {
+    font-family: 'Lato', sans-serif;
     border: 1px solid #e6e6e6;
     border-left: none;
     color: #a4a4a4;
@@ -105,7 +106,6 @@ img[alt="logo"] {
     width: 39px;
     height: 39px
 }
-
 .searchbar button::before {
     content: "\f002";
     font-family: FontAwesome;
@@ -558,10 +558,9 @@ figcaption p a {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .sub-wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
 }
 .slide {
     flex-basis: 570px;
@@ -577,7 +576,6 @@ figcaption p a {
     top: 0;
     bottom: 0;
     right: 0;
-    margin-right: 20px;
 }
 .quote {
     display: flex;
@@ -610,13 +608,14 @@ figcaption p a {
 }
 .sub-mail {
     margin: auto;
+    padding-bottom: 40px;
 }
 img[alt="face"] {
     padding-right: 28px;
     transition: transform 2s;
 }
 img[alt="face"]:hover {
-    transform: scale(1.1) rotate(720deg);
+    transform: scale(1.05) rotate(720deg);
 }
 .slide span {
     max-width: 391px;
@@ -650,6 +649,7 @@ img[alt="face"]:hover {
     width: 386px;
 }
 .sub-form__input {
+    font-family: 'Lato', sans-serif;
     border: none;
     border-radius: 23px 0 0 23px;
     background-color: #e1e1e1;
@@ -662,6 +662,7 @@ img[alt="face"]:hover {
     flex-basis: 280px; /*  334px  */
 }
 .sub-form__button {
+    font-family: 'Lato', sans-serif;
     border: none;
     color: #ffffff;
     border-radius: 0 23px 23px 0;
@@ -1021,6 +1022,7 @@ img[alt=progress-bar] {
     float: right;
 }
 .filter-selector-txt {
+    font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     height: 30px;
     padding: 5px 5px 5px 10px;
@@ -1078,8 +1080,6 @@ img[alt=progress-bar] {
 
 .feature-product {
     background-color: #222222;
-    /*min-height: 340px;*/
-    /*margin-top: 110px;*/
 }
 .feature-product-items {
     display: flex;
@@ -1411,8 +1411,115 @@ img[alt=progress-bar] {
 .details__input:focus {
     border: 1px solid #222222;
 }
-.stretch-horizontally {
+.opposite-sides {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
+}
+.address {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.address__shipping,
+.address__coupon {
+    margin-right: 15px;
+}
+.title {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.address__shipping input,
+.address__form-item {
+    font-family: 'Lato', sans-serif;
+    color: #b1b1b1;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    border: 1px solid #eaeaea;
+    padding: 10px 15px;
+    width: 355px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+.address__shipping ::placeholder {
+    font-family: 'Lato', sans-serif;
+    color: #b1b1b1;
+    font-size: 13px;
+    font-weight: 300;
+}
+.country {
+    margin-top: 20px;
+    position: relative;
+}
+.country::after {
+    content: "X";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.address__submit {
+    color: #4a4a4a;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    letter-spacing: -0.4px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+.address__submit:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #f16d7f;
+}
+.line {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 22px;
+}
+.address__total {
+    text-align: right;
+    padding: 40px 43px;
+    background-color: #f5f3f3;
+}
+.address__subtotal {
+    color: #4a4a4a;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.address__grand-total {
+    border-bottom: 1px #e2e2e2 solid;
+    padding-bottom: 20px;
+    margin-bottom: 17px;
+}
+.address__grand-sum {
+    color: #f16d7f;
+}
+.address__button {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #f16d7f;
+    padding: 17px 40px 17px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    letter-spacing: -0.65px;
+    transition: .25s linear;
+    width: 273px;
+}
+.address__button:hover {
+    border: 1px #f16d7f solid;
+    background-color: #ffffff;
+    color: #f16d7f;
 }

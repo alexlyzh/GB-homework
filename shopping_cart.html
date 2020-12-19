@@ -15,7 +15,7 @@
         <div class="head-wrap">
             <a href="index.html" class="logo-link"><img src="img/logo.png" alt="logo"><span class="logo-txt">Bran<span>d</span></span></a>
             <form action="#" class="searchbar">
-                <a href="#">Browse</a><input type="text" placeholder="Search for Item..."><button type="submit"></button>
+                <a href="#">Browse</a><input type="text" class="searchbar__input" placeholder="Search for Item..."><button type="submit"></button>
             </form>
             <a href="shopping_cart.html" class="cart"><img src="img/cart.png" alt="cart"></a><a href="#" class="account">My Account</a>
         </div>
@@ -94,9 +94,36 @@
                 </tr>
             </tbody>
         </table>
-        <div class="stretch-horizontally">
+        <div class="opposite-sides">
             <button class="button-site button-site_shopping_cart">Clear Shopping Cart</button>
             <button class="button-site button-site_shopping_cart">Continue Shopping</button>
+        </div>
+        <div class="address">
+            <div class="address__shipping">
+                <p class="address__p title">Shipping Address</p>
+                <form action="#" class="destination">
+                    <select name="country" class="address__form-item country">
+                        <option value="Bangladesh" selected>Bangladesh</option>
+                        <option value="Russia">Russia</option>
+                    </select>
+                    <input type="text" class="address__form-item state" placeholder="State">
+                    <input type="text" class="address__form-item zip" placeholder="Postcode / Zip">
+                    <button class="address__submit">Get a Quote</button>
+                </form>
+            </div>
+            <div class="address__coupon">
+                <p class="address__p title">coupon discount</p>
+                <p class="address__p line">Enter your coupon code if you have one</p>
+                <form action="#" class="coupon">
+                    <input type="text" class="address__form-item state" placeholder="State">
+                    <button class="address__submit">Apply coupon</button>
+                </form>
+            </div>
+            <div class="address__total">
+                <p class="address__subtotal">Sub total $900</p>
+                <p class="address__grand-total title">GRAND TOTAL <span class="address__grand-sum">$900</span></p>
+                <button class="address__button">proceed to checkout</button>
+            </div>
         </div>
     </section>
     <section class="subscription">
@@ -110,7 +137,7 @@
                         <span>Dhaka, Bd</span>
                         <span class="slide-bar">
                                 <a href="#" class="slide-button"></a><a href="#" class="slide-button"></a><a href="#" class="slide-button"></a>
-                            </span>
+                        </span>
                     </p>
                 </article>
             </div>
