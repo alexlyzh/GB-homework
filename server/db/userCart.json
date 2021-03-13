@@ -1,0 +1,20 @@
+{
+  "amount": 152,
+  "countGoods": 2,
+  "contents": [
+    {
+      "id_product": 1,
+      "product_name": "Mango People T-shirt",
+      "price": 52,
+      "img": "img/product-1.png",
+      "quantity": 5
+    },
+    {
+      "id_product": 2,
+      "product_name": "Красная рубаха",
+      "price": 100,
+      "img": "img/product-2.png",
+      "quantity": 5
+    }
+  ]
+}

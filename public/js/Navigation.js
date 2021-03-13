@@ -28,27 +28,27 @@ export const Navigation = {
         </div>  
         <div class="navigation__wrapper">
 <!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="product.html" @mouseover="visibleHome = !visibleHome" class="navigation__title">Man</a>
+            <a href="product.html" class="navigation__title">Man</a>
         </div>
         <div class="navigation__wrapper">
 <!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="checkout.html" @mouseover="visibleHome = !visibleHome" class="navigation__title">Women</a>
+            <a href="checkout.html" class="navigation__title">Women</a>
         </div>
         <div class="navigation__wrapper">
 <!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="#" @mouseover="visibleHome = !visibleHome" class="navigation__title">Kids</a>
+            <a href="#" class="navigation__title">Kids</a>
         </div>
         <div class="navigation__wrapper">
 <!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="#" @mouseover="visibleHome = !visibleHome" class="navigation__title">Accessories</a>
+            <a href="#" class="navigation__title">Accessories</a>
         </div>
         <div class="navigation__wrapper">
 <!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="#" @mouseover="visibleHome = !visibleHome" class="navigation__title"> Featured</a>
+            <a href="#" class="navigation__title"> Featured</a>
         </div>
         <div class="navigation__wrapper">
 <!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="single_page.html" @mouseover="visibleHome = !visibleHome" class="navigation__title">Hot Deals</a>
+            <a href="single_page.html" class="navigation__title">Hot Deals</a>
         </div>
     </nav>
     `,
