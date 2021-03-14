@@ -24,7 +24,7 @@ export const Navigation = {
     <nav class="navigation container">
         <div class="navigation__wrapper">
             <mega-nav v-if="visibleHome"></mega-nav>
-            <a href="#" @mouseover="visibleHome = !visibleHome" class="active-nav navigation__title">Home</a>
+            <a href="#" @click="visibleHome = !visibleHome" class="active-nav navigation__title">Home</a>
         </div>  
         <div class="navigation__wrapper">
 <!--            <mega-nav v-if="visibleHome"></mega-nav>-->

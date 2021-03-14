@@ -1,4 +1,3 @@
-const express = require('express');
 const cart = require('./cart');
 const fs = require('fs');
 

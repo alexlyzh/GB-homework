@@ -20,12 +20,24 @@ const App = {
         return {
             getJson: this.getJson,
             putJson: this.putJson,
-            postJson: this.postJson
+            postJson: this.postJson,
+            deleteJson: this.deleteJson
         }
     },
     methods: {
         getJson(url){
             return fetch(url)
+                .then(result => result.json())
+                .catch(error => console.log(`Обработчик: ${error}`))
+        },
+        deleteJson(url, data){
+            return fetch(url, {
+                method: 'DELETE',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
                 .then(result => result.json())
                 .catch(error => console.log(`Обработчик: ${error}`))
         },
