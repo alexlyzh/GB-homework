@@ -323,6 +323,15 @@ img[alt="cart"] {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+.cart__empty_big {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #222222;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    min-width: 250px;
+}
 .cart__title:hover {
     color: #f16d7f;
 }
@@ -401,7 +410,7 @@ img[alt="cart"] {
 .navigation {
     display: flex;
     justify-content: center;
-    margin: 15px auto 0 auto; /* margin: 15px auto 0 auto; */
+    margin: 15px auto;
     text-align: center;
 }
 .navigation__wrapper {

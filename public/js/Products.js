@@ -13,7 +13,9 @@ export const Products = {
     },
     computed: {
         filtered() {
-            return this.products.filter(el => new RegExp(this.page,'i').test(el.page));
+            return this.products.filter(el => {
+                return el.page.includes(this.page);
+            }); // new RegExp(this.page,'i').test(el.page)
         }
     },
     methods: {
@@ -24,7 +26,6 @@ export const Products = {
                 for (let el of data) {
                     this.products.push(el);
                 }
-                console.log(this.filtered)
             });
     },
     template: `

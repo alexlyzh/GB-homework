@@ -6,50 +6,13 @@ export const Navigation = {
     },
     data() {
         return {
-            visibleHome: false,
-            // visibleMan: false,
-            // visibleWomen: false,
-            // visibleKids: false,
-            // visibleAccs: false,
-            // visibleFeat: false,
-            // visibleHot: false,
+            labels: ['Home','Men','Women','Kids','Accessories','Featured','Hot deals'],
         }
-    },
-    calculated: {
-    },
-    methods: {
     },
 
     template: `
     <nav class="navigation container">
-        <div class="navigation__wrapper">
-            <mega-nav v-if="visibleHome"></mega-nav>
-            <a href="#" @click="visibleHome = !visibleHome" class="active-nav navigation__title">Home</a>
-        </div>  
-        <div class="navigation__wrapper">
-<!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="product.html" class="navigation__title">Man</a>
-        </div>
-        <div class="navigation__wrapper">
-<!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="checkout.html" class="navigation__title">Women</a>
-        </div>
-        <div class="navigation__wrapper">
-<!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="#" class="navigation__title">Kids</a>
-        </div>
-        <div class="navigation__wrapper">
-<!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="#" class="navigation__title">Accessories</a>
-        </div>
-        <div class="navigation__wrapper">
-<!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="#" class="navigation__title"> Featured</a>
-        </div>
-        <div class="navigation__wrapper">
-<!--            <mega-nav v-if="visibleHome"></mega-nav>-->
-            <a href="single_page.html" class="navigation__title">Hot Deals</a>
-        </div>
+        <mega-nav v-for="el of labels" :name="el"></mega-nav>
     </nav>
     `,
 }

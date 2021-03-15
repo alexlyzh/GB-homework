@@ -126,7 +126,7 @@ export const Cart = {
             <form action="" method="post"></form>
             <table class="details">
                 <tbody>
-                    <tr>
+                    <tr v-show="cartItems.length">
                         <th>Product Details</th>
                         <th>Unit Price</th>
                         <th>Quantity</th>
@@ -134,6 +134,7 @@ export const Cart = {
                         <th>Subtotal</th>
                         <th>ACTION</th>
                     </tr>
+                    <p v-if="!cartItems.length" class="cart__empty_big">Cart is empty</p>
                     <cart-item
                     v-for="item of cartItems" 
                     :key="item.id_product"
