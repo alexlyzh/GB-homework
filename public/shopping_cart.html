@@ -17,7 +17,8 @@
                 <a href="index.html" class="logo-link"><img src="img/logo.png" alt="logo"><span class="logo-txt">Bran<span>d</span></span></a>
                 <drop-down ref="refDropDown"></drop-down>
                 <div class="cart__block">
-                    <cart></cart>
+                    <cart :isbigcart=false></cart>
+<!--                    <button class="cart_btn"><img src="img/cart.png" alt="cart"></button>-->
                 </div>
                 <a href="#" class="account">My Account</a>
             </div>
@@ -34,97 +35,7 @@
             </div>
         </section>
         <section class="shopping-cart container">
-            <table class="details">
-                <tbody>
-                    <tr>
-                        <th>Product Details</th>
-                        <th>Unit Price</th>
-                        <th>Quantity</th>
-                        <th>Shipping</th>
-                        <th>Subtotal</th>
-                        <th>ACTION</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="details__art">
-                                <a href="product.html"><img src="img/manpic_1.png" alt="cart_img" class="cart_image"></a>
-                                <div class="details__text">
-                                    <span class="details__text-headline">Mango  People  T-shirt</span>
-                                    <span class="details_text-specs"><span>Color:</span> Red</span><span class="details_text-specs"><span>Size:</span> Xll</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td><span class="details__unit-price">$150</span></td>
-                        <td><input class="details__input" type="text" value="2"></td>
-                        <td><span class="details__shipping">Free</span></td>
-                        <td><span class="details__subtotal">$300</span></td>
-                        <td><button class="details__action"><i class="fa fa-times-circle" aria-hidden="true"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="details__art">
-                                <a href="product.html"><img src="img/cartoon_2.png" alt="cart_img" class="cart_image"></a>
-                                <div class="details__text">
-                                    <span class="details__text-headline">Mango  People  T-shirt</span>
-                                    <span class="details_text-specs"><span>Color:</span> Red</span><span class="details_text-specs"><span>Size:</span> Xll</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td><span class="details__unit-price">$150</span></td>
-                        <td><input class="details__input" type="text" value="2"></td>
-                        <td><span class="details__shipping">Free</span></td>
-                        <td><span class="details__subtotal">$300</span></td>
-                        <td><button class="details__action"><i class="fa fa-times-circle" aria-hidden="true"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="details__art">
-                                <a href="product.html"><img src="img/cartoon_3.png" alt="cart_img" class="cart_image"></a>
-                                <div class="details__text">
-                                    <span class="details__text-headline">Mango  People  T-shirt</span>
-                                    <span class="details_text-specs"><span>Color:</span> Red</span><span class="details_text-specs"><span>Size:</span> Xll</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td><span class="details__unit-price">$150</span></td>
-                        <td><input class="details__input" type="text" value="2"></td>
-                        <td><span class="details__shipping">Free</span></td>
-                        <td><span class="details__subtotal">$300</span></td>
-                        <td><button class="details__action"><i class="fa fa-times-circle" aria-hidden="true"></i></button></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="opposite-sides">
-                <button class="button-site button-site_shopping_cart">Clear Shopping Cart</button>
-                <button class="button-site button-site_shopping_cart">Continue Shopping</button>
-            </div>
-            <div class="address">
-                <div class="address__shipping">
-                    <p class="address__p title">Shipping Address</p>
-                    <form action="#" class="destination">
-                        <select name="country" class="address__form-item country">
-                            <option value="Bangladesh" selected>Bangladesh</option>
-                            <option value="Russia">Russia</option>
-                        </select>
-                        <input type="text" class="address__form-item state" placeholder="State">
-                        <input type="text" class="address__form-item zip" placeholder="Postcode / Zip">
-                        <button class="address__submit">Get a Quote</button>
-                    </form>
-                </div>
-                <div class="address__coupon">
-                    <p class="address__p title">coupon discount</p>
-                    <p class="address__p line">Enter your coupon code if you have one</p>
-                    <form action="#" class="coupon">
-                        <input type="text" class="address__form-item state" placeholder="State">
-                        <button class="address__submit">Apply coupon</button>
-                    </form>
-                </div>
-                <div class="address__total">
-                    <p class="address__subtotal">Sub total $900</p>
-                    <p class="address__grand-total title">GRAND TOTAL <span class="address__grand-sum">$900</span></p>
-                    <button class="address__button">proceed to checkout</button>
-                </div>
-            </div>
+            <cart :isbigcart="true"></cart>
         </section>
         <section class="subscription">
             <div class="sub-wrapper container">
